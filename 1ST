@@ -1,0 +1,38 @@
+print("Hello, To sign up, please enter your first name and last name.")
+name = input()
+if name == "":
+    print("Please enter a valid name.")
+else:
+    print("Thank you for signing up!")
+    print("Welcome to our platform!")
+
+print ("How old are you?")
+input_age = input()
+try:
+    age = int(input_age)
+except ValueError:
+    print("Please enter a valid number for your age.")
+    age = None
+    
+if age is not None:
+    if age < 18:
+        print("You must be at least 18 years old to sign up.")
+    else:
+        print("You signed up to our platform.")
+        print("What is your favorite color?")
+        fav_color = input()
+        if fav_color == "":
+            print("Please enter a valid color.")
+        else:
+            print("Your favorite color is " + fav_color + ".")
+if age < 18:
+    print("You must be at least 18 years old to sign up.")
+else:
+    print("You signed up to our platform.")
+
+print("What is your favorite color?")
+fav_color = input()
+if fav_color == "":
+    print("Please enter a valid color.")
+else:
+    print("Your favorite color is " + fav_color + ".")
